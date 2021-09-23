@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Prikazi from './Prikazi';
 
 
 
@@ -8,9 +9,10 @@ class Dohvati extends Component {
     this.state = { 
       ime:[]
      }
+     this.promena=this.promena.bind(this)
   }
 
-  onSubmit=()=>{
+  promena=()=>{
     let imeFilma=document.getElementById("ime").value;
     this.setState({ime:imeFilma})
     console.log(this.state.ime)
@@ -21,11 +23,12 @@ class Dohvati extends Component {
     return (
       
       <div>
-      <input id="ime"
+      <input onChange={this.promena} id="ime"
             type="text"
             placeholder="Unesite ime filma"
           ></input>
-          <button type="submit" onClick={this.onSubmit}>Pronadji film po imenu</button>
+          
+          <Prikazi ime={this.state.ime}></Prikazi>
           </div>
     );
   }

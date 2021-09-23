@@ -15,7 +15,7 @@ class Dohvati extends Component {
   promena=()=>{
     let imeFilma=document.getElementById("ime").value;
     this.setState({ime:imeFilma})
-    console.log(this.state.ime)
+    //console.log(this.state.ime)
   }
 
   render() { 
@@ -23,11 +23,11 @@ class Dohvati extends Component {
     return (
       
       <div>
-      <input onChange={this.promena} id="ime"
+      <input id="ime"
             type="text"
             placeholder="Unesite ime filma"
           ></input>
-          
+          <button type="submit" onClick={this.promena}>Ukucaj ime filma</button>
           <Prikazi ime={this.state.ime}></Prikazi>
           </div>
     );

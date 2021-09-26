@@ -1,11 +1,12 @@
 import React from 'react'
+import "./App.css"
 
 
 
 function MyInfo(){
 return(
 <div>
-<h1>Dejan Mitrovic</h1>
+<h1 className="ime">Dejan Mitrovic</h1>
 <p>Opasno uporan tip</p>
 <ul>
   <li>Prvo mesto za letovanje Hrvatska</li>

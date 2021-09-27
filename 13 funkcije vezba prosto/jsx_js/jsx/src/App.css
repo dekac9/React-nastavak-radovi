@@ -1,0 +1,14 @@
+body{
+  margin: 0;
+}
+
+.pozdrav{
+background-color: grey;
+font-size: larger;
+color: khaki;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 40vh;
+}

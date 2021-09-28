@@ -4,10 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <input type="checkbox"></input><span>prvi</span><br/>
-      <input type="checkbox"></input><span>drugi</span><br/>
-      <input type="checkbox"></input><span>treci</span><br/>
-      <input type="checkbox"></input><span>cetvrti</span><br/>
+      <input type="checkbox"/><p>prvi</p>
+      <input type="checkbox"/><p>drugi</p>
+      <input type="checkbox"/><p>treci</p>
+      <input type="checkbox"/><p>cetvrti</p>
     </div>
   );
 }

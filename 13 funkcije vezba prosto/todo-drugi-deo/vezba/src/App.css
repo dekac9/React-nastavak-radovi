@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  text-decoration:none;
+  background-color:aquamarine;
+}
+.omotac{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.item{
+  height:auto;
+  width:40%;
+  border: solid black 1px;
+  border-radius: 5px;
+  box-shadow: gray 3px 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: honeydew;
+  
+}

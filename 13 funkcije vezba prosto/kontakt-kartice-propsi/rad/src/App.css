@@ -1,0 +1,16 @@
+img{
+  width: 50%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kartica{
+  border: black 1px solid;
+  margin:5px;
+  width:70%;
+  text-align: center;
+}

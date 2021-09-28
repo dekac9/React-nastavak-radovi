@@ -1,4 +1,6 @@
-
+body{
+  background-color: gainsboro;
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -7,6 +9,7 @@
 }
 
 .kartica{
+  background-color: rgb(165, 160, 160);
   border: black 1px solid;
   margin:5px;
   width:70%;

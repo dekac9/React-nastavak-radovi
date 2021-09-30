@@ -3,7 +3,8 @@ import React from "react";
 
 
 function Joke (props) {
-  console.log(props)
+console.log(props)
+
   let temp = props.pitanje;
   let karakt = temp?"block" : "none";
   let boja = temp?"black":"dodgerblue"

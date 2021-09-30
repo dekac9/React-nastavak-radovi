@@ -1,22 +1,21 @@
-import React from 'react'
-import Joke from "./Joke"
-import jokes from './jokesData';
-import './App.css';
+import React from "react";
+import Joke from "./Joke";
+import jokes from "./jokesData";
+import "./App.css";
 
-console.log(jokes)
-var data=jokes;
+//console.log(jokes)
+var data = jokes;
+
+console.log(typeof(data))
 
 function App() {
-  data.map((element)=>{
-    var pitanja=element.pitanje;
-    var odgovori=element.odgovor;
-    return (
-    <div className="App">
-      <Joke obj={{pitanje:{pitanja}, odgovor: {odgovori}}}></Joke>
-      
-    </div>
-  );
-  })
+  let vicevi = data.map((element) => {
+    return (<Joke key={element.id} pitanje={element.pitanje} odgovor={element.odgovor}></Joke>);
+
+  });
+  return (<div>
+    { vicevi }
+  </div>)
   
 }
 

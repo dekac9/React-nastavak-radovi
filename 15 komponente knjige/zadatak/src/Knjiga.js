@@ -1,7 +1,7 @@
 import React from 'react'
 import "./App.css"
 
-const Knjiga = ({slika,ime,autor}) => {
+const Knjiga = ({slika,ime,autor,children}) => {
   //let {slika,ime,autor}=props
   //prvi nacin, destruktuiras objekat props na propertije i njih nisanis
 
@@ -9,11 +9,12 @@ const Knjiga = ({slika,ime,autor}) => {
  // direktno u fju, umesto propsa, prihvaras destruktuiran objekat
   return (
     <div className="osnovno">
-      <img src={slika}/>
-      <h2 style={{color:"red"}}>{ime}</h2>
+      <img src={slika} />
+      <h2 style={{ color: "red" }}>{ime}</h2>
       <p>{autor}</p>
+      <p>{children}</p>
     </div>
-  )
+  );
 }
 
 export default Knjiga

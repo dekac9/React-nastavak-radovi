@@ -1,6 +1,7 @@
 import React from 'react'
 import "./App.css"
 
+
 const Knjiga = ({ slika, ime, autor,id }) => {
   //console.log(props);
   //let { slika, ime, autor } = props;

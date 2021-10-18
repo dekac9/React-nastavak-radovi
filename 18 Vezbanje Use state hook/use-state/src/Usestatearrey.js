@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { data } from "./data";
 
-const Useeffecthook = () => {
+const Usestatearrey = () => {
   const [people, setPeople] = useState(data);
   const removeItem = (id)=>{
     //console.log(id)
@@ -27,4 +27,4 @@ const Useeffecthook = () => {
   );
 };
 
-export default Useeffecthook;
+export default Usestatearrey;

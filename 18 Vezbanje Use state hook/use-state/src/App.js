@@ -1,6 +1,7 @@
 import Usestatehook from "./Usestate"
 import Useestatearrey from "./Usestatearrey";
-import Usestateobject from"./Usestateobject"
+import Usestateobject from"./Usestateobject";
+import Counter from "./Counter"
 import './App.css';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <hr/>
     {/* <Useestatearrey/>
     <hr/> */}
-    <Usestateobject/>
+    {/* <Usestateobject/> */}
+    <Counter/>
     </div>
   );
 }

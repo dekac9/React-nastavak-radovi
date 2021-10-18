@@ -1,25 +1,32 @@
 import React from "react";
-import {useState} from "react"
+import { useState } from "react";
 
 const UseStateHook = () => {
-  const[state,setState]=useState("pocetak")
+  const [state, setState] = useState("pocetak");
 
-  const kliknuto = ()=>{
-// setState("promenjeno")
+  const kliknuto = () => {
+    //PRVI NACIN
+    // setState("promenjeno")
 
-if(state=="pocetak"||state=="zamenjeno"){
- setState("promenjeno");
-}else{
-  setState("zamenjeno");
-}
+    //DRUGI NACIN
+    // if(state=="pocetak"||state=="zamenjeno"){
+    //  setState("promenjeno");
+    // }else{
+    //   setState("zamenjeno");
+    // }
 
-  }
+    //TERNARNO, JOS KRACE
+    state == "pocetak" ? setState("promenjeno") : setState("pocetak");
+  };
 
-
-  return <React.Fragment>
-  <h2>{state}</h2>
-  <button type="button" class="btn" onClick={kliknuto}>Klikni me</button>
-  </React.Fragment>
+  return (
+    <React.Fragment>
+      <h2>{state}</h2>
+      <button type="button" class="btn" onClick={kliknuto}>
+        Klikni me
+      </button>
+    </React.Fragment>
+  );
 };
 
 export default UseStateHook;

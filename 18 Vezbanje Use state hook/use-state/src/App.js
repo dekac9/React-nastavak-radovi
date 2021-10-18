@@ -1,10 +1,13 @@
-import Usestate from "./Usestate"
+import Usestatehook from "./Usestate"
+import Useeffecthook from "./Useeffect";
 import './App.css';
 
 function App() {
   return (
     <div className="container">
-    <Usestate/>
+    <Usestatehook/>
+    <hr/>
+    <Useeffecthook/>
     </div>
   );
 }

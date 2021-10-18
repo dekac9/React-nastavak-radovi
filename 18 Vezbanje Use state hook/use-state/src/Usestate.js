@@ -22,7 +22,7 @@ const UseStateHook = () => {
   return (
     <React.Fragment>
       <h2>{state}</h2>
-      <button type="button" class="btn" onClick={kliknuto}>
+      <button type="button" className="btn" onClick={kliknuto}>
         Klikni me
       </button>
     </React.Fragment>

@@ -1,5 +1,5 @@
 import Usestatehook from "./Usestate"
-import Useeffecthook from "./Useeffect";
+import Useestatearrey from "./Usestatearrey";
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="container">
     <Usestatehook/>
     <hr/>
-    <Useeffecthook/>
+    <Useestatearrey/>
     </div>
   );
 }

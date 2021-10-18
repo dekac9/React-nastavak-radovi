@@ -1,5 +1,5 @@
-import React from 'react'
-import UseStateBasics from "./tutorial/1-useState/setup/2-useState-basic";
+
+import UseStateBasics from "./tutorial/1-useState/setup/2-useState-pocetak";
 
 
 
